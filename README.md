@@ -1,2 +1,2 @@
-# WebsiteTesting
-I test website stuff with this go away
+# Website
+Used to host my static website
