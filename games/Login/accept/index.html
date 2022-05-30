@@ -25,34 +25,37 @@
         <br>
         <br>
 
-	    <p id="title">Login</p>
+	    <p id="title">End user agreement</p>
 		
 		<br>
         <br>
 		
-		<p id="passCodeText">Code: <input id ="PassCodeInput" type="password" /></p>
+		<p>This website does NOT track, store or save any of your information such as cookies or IP.  I do not own any of the games on the following page, they are loaded from the original website in a way that they cannot be blocked.</p>
+
+        <br>
+
+        <p>If you wish to contact me about copyright issues please click the contact button above or <a id="link" href="https://discord.gg/NxSuqnavCj">here.</a></p>
 		
-		<br>
 		<br>
         <br>
 
-		<button class="button button1" id="login">Login</button>
+        <p><input id ="checkBox" type="checkbox"/> I accept the End user agreement</p>
+
+        <br>
+
+		<button class="button button1" id="continue">Continue</button>
 	</div>
 
     <script>
-        fetch("https://static.123game.dev/env/code.txt")
-            .then(response => response.text())
-            .then(data => {
-                let loginbutton = document.getElementById("login");
+        let continueButton = document.getElementById("continue");
 
-                loginbutton.addEventListener("click", event => {
-                let passCodeBox = document.getElementById("PassCodeInput");
-	            let passCodeText = passCodeBox.value;
+        continueButton.addEventListener("click", event => {
+            let checkBox = document.getElementById("checkBox");
+	        let checkBoxVal = checkBox.value;
 
-	            if(passCodeText == data) {
-		             location.href = "https://www.123game.dev/games/accept/"
-	            }
-            })
+	        if(checkBoxVal == "on") {
+		        location.href = "https://www.123game.dev/games/xyz/"
+	        }
         })
     </script>
 </body>

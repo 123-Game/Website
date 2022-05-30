@@ -4,7 +4,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #24252A;
+}
+
+body {
+    overflow: hidden;
 }
 
 li, a, button {
@@ -35,6 +38,7 @@ li, a, button {
 }
 
 header {
+    user-select: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
