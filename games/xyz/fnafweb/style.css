@@ -58,6 +58,10 @@ header {
     background-color: #1a1b1c;
 }
 
+.nav__bar li a[id="warning"] {
+    color: #ff7300;
+}
+
 .nav__bar li a[id="offline"] {
     color: #ff0000;
 }

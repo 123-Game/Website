@@ -62,7 +62,15 @@ header {
     background-color: #1a1b1c;
 }
 
-.nav__bar li a:hover {
+.nav__bar li a[id="warning"] {
+    color: #ff7300;
+}
+
+.nav__bar li a[id="offline"] {
+    color: #ff0000;
+}
+
+.nav__bar li a[id="online"]:hover {
     color: #0088a9;
 }
 
