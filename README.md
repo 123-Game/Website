@@ -1,2 +1,2 @@
-# Website
-Used to host my static website
+# Outdated
+This branch is extremely outdated!
